@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employees details</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        user_id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Pno
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                    <th>
+                        Password
+                    </th>
+                    <th>
+                        E-mail
+                    </th>
+                    <th>
+                        address 
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                    <% for(let users of showusers){%>
+                <tr>
+                    <td><%= users.USER_ID %></td>
+                    <td><%=users.NAME %></td>
+                    <td><%=users.PHONE %></td>
+                    <td><%=users.GENDER %></td>
+                    <td><%=users.EMAIL_ID %></td>
+                    <td><%=users.ADDRESS %></td>
+                    <td><%=users.PASSWORD %></td>
+                </tr>
+                <%}%>
+            </tbody>
+        </table>
+    </body>
+</html>

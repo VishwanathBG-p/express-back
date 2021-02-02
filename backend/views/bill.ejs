@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        vehicle number
+                    </th>
+                    <th>
+                        Service details
+                    </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let bill of allBill){%>
+                <tr>
+                    <td><%=bill.VEHICLE_NUMBER%></td>
+                    <td><%=bill.SERVICE_DETAIL%></td>
+                </tr>
+                <%}%>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
